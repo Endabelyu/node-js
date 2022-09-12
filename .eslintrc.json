@@ -10,7 +10,9 @@
   },
   "rules": {
     "prettier/prettier": "error",
-    "no-console": "off"
+    "no-console": "off",
+    "func-names": ["as-needed"],
+     "string": "off" 
   },
   "plugins": ["prettier"]
 }

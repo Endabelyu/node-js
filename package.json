@@ -1,26 +1,31 @@
 {
-  "name": "node js",
+  "name": "node_js",
   "version": "1.0.0",
   "description": "learn",
   "main": "src/index.js",
   "scripts": {
     "start": "nodemon src/index.js",
-    "build": "node src/index.js"
+    "build": "node src/index.js",
+    "migrate": "knex migrate:latest --knexfile src/models/knexfile.js"
   },
   "author": "endabelyu",
   "license": "MIT",
   "devDependencies": {
-    "nodemon": "latest",
     "eslint": "latest",
     "eslint-config-airbnb-base": "latest",
     "eslint-config-prettier": "latest",
     "eslint-plugin-import": "latest",
     "eslint-plugin-prettier": "latest",
+    "nodemon": "latest",
     "prettier": "latest"
   },
   "dependencies": {
-    "express": "latest",
+    "bcrypt": "^5.0.1",
     "cors": "latest",
-    "dotenv": "latest"
+    "dotenv": "latest",
+    "express": "latest",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^2.3.0",
+    "mysql2": "^2.3.3"
   }
 }
